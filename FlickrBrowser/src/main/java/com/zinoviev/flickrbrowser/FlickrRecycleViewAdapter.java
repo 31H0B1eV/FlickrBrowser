@@ -22,6 +22,11 @@ public class FlickrRecycleViewAdapter extends RecyclerView.Adapter<FlickrImageVi
         this.mContext = context;
     }
 
+    public Photo getPhoto(int position)
+    {
+        return ( null != photoList.get(position) ? photoList.get(position) : null );
+    }
+
     @Override
     public FlickrImageViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {

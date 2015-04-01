@@ -1,7 +1,11 @@
 package com.zinoviev.flickrbrowser;
 
-public class Photo
+import java.io.Serializable;
+
+public class Photo implements Serializable
 {
+    private static final long serialVersionUID = 1L;
+
     private String title;
     private String author;
     private String authorId;
@@ -17,6 +21,11 @@ public class Photo
         this.link = link;
         this.tags = tags;
         this.image = image;
+    }
+
+    public static long getSerialVersionUID()
+    {
+        return serialVersionUID;
     }
 
     public String getTitle()

@@ -48,7 +48,10 @@ public class MainActivity extends BaseActivity
                     @Override
                     public void onItemLongClick(View view, int position)
                     {
-                        Toast.makeText(MainActivity.this, "Long click: " + String.valueOf(position), Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(MainActivity.this, "Long click: " + String.valueOf(position), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this, PhotoDetails.class);
+                        intent.putExtra(PHOTO_TRANSFER, adapter.getPhoto(position));
+                        startActivity(intent);
                     }
                 }));
     }

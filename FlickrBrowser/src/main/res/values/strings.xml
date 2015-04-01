@@ -8,5 +8,7 @@
     <string name="action_search">Search</string>
     <string name="title_activity_search">Search Activity</string>
     <string name="searchable_query">Search Query</string>
+    <string name="title_activity_photo_details">Photo Details</string>
+    <string name="photo_detail_description">photo detailed view</string>
 
 </resources>
